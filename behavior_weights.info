@@ -2,4 +2,4 @@
 name = "Behavior weights"
 description = "Allows to attach weights to your Drupal behaviors (javascript)."
 package = javascript
-core = 6.x
+core = 7.x

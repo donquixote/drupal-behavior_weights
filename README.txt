@@ -19,13 +19,13 @@ API USAGE
   // Let this run after other behaviors
   Drupal.behaviors['mymodule_late.weight'] = 10;
 
-  Drupal.behaviors.mymodule_early = function(context){
+  Drupal.behaviors.mymodule_early = {attach: function(context){
     .. // your stuff to happen.
-  };
+  }};
 
-  Drupal.behaviors.mymodule_late = function(context){
+  Drupal.behaviors.mymodule_late = {attach: function(context){
     .. // your stuff to happen.
-  };
+  }};
 })();
 
   The default weight is 0. Anything with a smaller weight will run earlier.
