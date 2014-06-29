@@ -1,6 +1,8 @@
 <?php
 
-
+/**
+ * Implements hook_init()
+ */
 function behavior_weights_init() {
   drupal_add_js(drupal_get_path('module', 'behavior_weights') . '/behavior_weights.js');
 }
